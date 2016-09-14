@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { RandomUserService } from './services';
 import { Observable } from 'rxjs/Rx';
 import { User, MultiSortMetadata, SortEvent, SortableColumn } from './interfaces';
-import { SelectItem, MenuItem } from 'primeng/primeng';
+import { SelectItem } from 'primeng/primeng';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.less']
 })
 export class AppComponent implements OnInit {
   title = 'app works!';
