@@ -1,0 +1,17 @@
+<p-dataTable class="ui celled table large center aligned padded sortable"
+  [value]="users | async" sortMode="multiple" selectionMode="multiple" [(selection)]="selectedUsers"
+  [rows]="1" [paginator]="true" [pageLinks]="3" [rowsPerPageOptions]="[1,2]"
+  reorderableColumns="true" [editable]="true"
+  (onSort)="onSort($event)" >
+    <header>
+      <div style="text-align:left" >
+          <p-multiSelect [options]="columnOptions" [(ngModel)]="cols"></p-multiSelect>
+      </div>
+    </header>
+    <footer>There are {{cols.length}} users</footer>
+    <p-column *ngFor="let col of cols"
+      [field]="col.field" [header]="col.header" [filter]="true" filterMatchMode="contains"
+      [editable]="true" [sortable]="true" [styleClass]=col.orderClass>
+    </p-column>
+</p-dataTable>
+
