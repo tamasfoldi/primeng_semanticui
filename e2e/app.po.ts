@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor/globals';
 
-export class SemanticUIPrimeNgPage {
+export class SemanticUiPrimeNgPage {
   navigateTo() {
     return browser.get('/');
   }

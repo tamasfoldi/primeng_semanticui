@@ -3,7 +3,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('App: Semantic UI PrimeNg', () => {
+describe('App: SemanticUiPrimeNg', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [

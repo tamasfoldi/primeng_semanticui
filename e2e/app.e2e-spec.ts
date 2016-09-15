@@ -1,10 +1,10 @@
-import { SemanticUIPrimeNgPage } from './app.po';
+import { SemanticUiPrimeNgPage } from './app.po';
 
-describe('Semantic UI PrimeNg App', function() {
-  let page: SemanticUIPrimeNgPage;
+describe('semantic-ui-prime-ng App', function() {
+  let page: SemanticUiPrimeNgPage;
 
   beforeEach(() => {
-    page = new SemanticUIPrimeNgPage();
+    page = new SemanticUiPrimeNgPage();
   });
 
   it('should display message saying app works', () => {
