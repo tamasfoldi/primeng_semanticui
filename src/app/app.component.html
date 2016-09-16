@@ -8,7 +8,7 @@
           <p-multiSelect [options]="columnOptions" [(ngModel)]="cols"></p-multiSelect>
       </div>
     </header>
-    <footer>There are {{cols.length}} users</footer>
+    <footer>There are {{ (users | async)?.length}} users</footer>
     <p-column *ngFor="let col of cols"
       [field]="col.field" [header]="col.header" [filter]="true" filterMatchMode="contains"
       [editable]="true" [sortable]="true" [styleClass]=col.orderClass>
